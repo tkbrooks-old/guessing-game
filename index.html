@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guessing Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/guessinggame.css">
+    </head>
+    <body>
+      <div class="container"> <!-- Open Main Container -->
+
+        <div class="row">
+          <div class="col-12">
+            <h1>Guessing Game</h1>
+          </div>
+          <div class="col-12">
+            <h2>[ 001 - 100 ]</h2>
+          </div>
+        </div>
+
+        <!-- Guess Row -->
+        <div id="guesses" class="row">
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+          <div class="col-1 arrow-div pt-2"></div>
+          <div class="col guess-div pt-2"><h3></h3></div>
+        </div>
+
+        <hr>
+
+        <!-- Stars -->
+        <div id="stars" class="row"></div>
+
+        <hr>
+
+        <!-- Input & Hint Display Area -->
+        <div id="input-parent" class="row mt-3">
+          <div class="col">
+            <div class="row">
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-12 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="user-guess" class="sr-only">Enter your guess:</label>
+              <input type="text" class="form-control" id="user-guess" placeholder="" maxlength="3" autofocus>
+            </div>
+            <button type="button" id="submit" class="btn btn-primary">Guess</button>
+          </div>
+
+          <div class="col">
+            <div class="row">
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-12 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+              <div class="col-6 hint-div"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset & Hint Buttons -->
+        <div id="menu-btns" class="row">
+          <div class="col">
+            <button id="reset" type="button" class="btn btn-danger float-right">Reset</button>
+          </div>
+          <div class="col">
+            <button id="hint" type="button" class="btn btn-secondary float-left">Hint</button>
+          </div>
+        </div>
+
+      </div> <!-- Close Main Container -->
+
+      <!-- Fullstack & Grace Hopper Footer -->
+      <footer>
+        <div class="row m-0">
+          <div class="col-12 col-md-6">
+            <img class="ml-1" src="assets/fa-logo-large.png" alt="Fullstack Academy Logo">
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="mr-1" src="assets/gh-logo-large.svg" alt="Grace Hopper Logo">
+          </div>
+        </div>
+      </footer>
+
+      <!-- Link to Github -->
+      <div id="project"><a href="https://github.com/tkbrooks">Project by Tyler Brooks <img src="assets/Github-Mark-32px.png" alt="github"></a></div>
+
+      <!-- Scripts -->
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/guessinggame.js"></script>
+    </body>
+</html>
